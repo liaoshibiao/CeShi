@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js?v=1.1"></script>
+    <script type="text/javascript" src="js/To_configure.js" ></script>
+    <script type="text/javascript" src="js/url.js" ></script>
+    <script type="text/javascript" src="js/api.js?v=1.1"></script>
+</head>
+<style>
+	.item img{
+		width: 100px;height: 100px;
+	}
+	
+</style>
+<body>
+    <div class="ban"><img src="images/ban1.jpg" /></div>
+    <div class="dataList" style="display: none;">
+        <div class="item">
+            <img src="images/day-icon.png" alt="" />
+            <span>今日销额</span>
+            <b id='day_sal_amt'>0<label>万</label></b>
+        </div>
+        <div class="item">
+            <img src="images/month-icon.png" alt="" />
+            <span>月累计销额</span>
+            <b id='sal_amt'>0<label>万</label></b>
+        </div>
+        <div class="item">
+            <img src="images/finish-icon.png" alt="" />
+            <span>预计达成率</span>
+            <b id="dc">0<label>%</label></b>
+        </div>
+    </div>
+    <div class="navList">
+        <div class="item"><a href="biaodan.html"><img src="images/pinpai.png" alt=""><span>品牌对比</span></a></div>
+        <div class="item"><a href="KDLS.html"><img src="images/dianpu.png" alt=""><span>店铺排行</span></a></div>
+        <div class="item"><a href="quyu.html"><img src="images/quyu.png" alt=""><span>区域排行</span></a></div>
+    </div>
+</body>
+</html>
+<script>
+	var a1 = document.getElementsByTagName('a')[0];
+	var a2 = document.getElementsByTagName('a')[1];
+	var a3 = document.getElementsByTagName('a')[2];
+	console.log(a1 + a2 + a3)
+	
+var url = a1.getAttribute('href');
+url = url + '?&corpId=' + corpId + '&userId=' +userId; 
+a1.setAttribute('href', url); 
+
+var url = a2.getAttribute('href');
+url = url + '?&corpId=' + corpId + '&userId=' +userId; 
+a2.setAttribute('href', url); 
+
+var url = a3.getAttribute('href');
+url = url + '?&corpId=' + corpId + '&userId=' +userId; 
+a3.setAttribute('href', url); 
+</script>

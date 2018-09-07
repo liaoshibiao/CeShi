@@ -1,0 +1,24 @@
+.qu_yu{
+    position: absolute;
+    top: 0px;
+    width: .5rem;
+    height: 40%;
+    right: 0;
+    background-repeat:no-repeat;
+    background-image: url(../images/sjx_k.png);
+    background-size: 100% !important;
+    display: none;
+}
+	   #cehua{
+			width:100%;height:100%;background:white;position:fixed;top: 0;right:0;z-index:999;opacity:1;display: none;
+			
+		}
+		#ling{
+			width:10%;height:100%;position: absolute;top:0;left:0;z-index:999;display: none;
+		}
+		.pinpai{
+			width:30%;height:50px;float:left;margin:1% 0%;text-align: center;line-height:50px;
+			margin-left: 8px;
+			background: #DCDCDC;
+			position: relative;
+		}
